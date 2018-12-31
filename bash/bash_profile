@@ -1,4 +1,4 @@
-# .bash_profile - login shell configuration:
+#.bash_profile - login shell configuration:
 
 # Add `~/bin` & `~/bin/local` to the `$PATH`
 if [ -d "$HOME/bin" ]; then
@@ -32,6 +32,9 @@ HISTCONTROL="erasedups:ignoreboth"
 HISTIGNORE="clear:exit:cd:pwd:ls:la:ll:lx:lf:ld:ls -l:history"
 HISTSIZE="2000"
 HISTFILESIZE="2000"
+
+# Disable CTRL-d, avoid accidentaly terminating shell
+set -o ignoreeof
 
 # Autocorrect typos in path names when using `cd`
 #shopt -s cdspell;

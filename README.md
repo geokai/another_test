@@ -7,8 +7,9 @@
 - bash_aliases
 - bash_prompt
 
-### vim:
-- vimrc
+### git:
+- gitconfig
+- gitignore_global
 
 ### tmux:
 - tmux.conf
